@@ -11,6 +11,8 @@ for i in zip(name,age):
 
 ##
 k={}    
-for i,j in name,age:
-    k[i]=zip(j)
+for i,j in zip(name,age):
+   k[i]=age
 print(k)
+
+
