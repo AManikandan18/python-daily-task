@@ -7,3 +7,4 @@ for num in range(start,end+1):
                 break
         else:
             print(num,"is prime")
+
