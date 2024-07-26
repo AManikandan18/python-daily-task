@@ -12,7 +12,8 @@ for i in zip(name,age):
 ##
 k={}    
 for i,j in zip(name,age):
-   k[i]=age
+   k[i]=(age)
 print(k)
+
 
 
