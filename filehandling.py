@@ -4,5 +4,8 @@ a=open("file handling.txt","r")#read is used for read the the one file or data
 #print(a.read())
 a.write("banana")#a.close() #if you use write function it it will be create a new data or values and errase the existing datas
 a.write("graes","nuts")
+
 a.close()
 print(a.read)
+
+
