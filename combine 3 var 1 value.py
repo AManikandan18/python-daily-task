@@ -2,15 +2,15 @@ a = ['hii','bye','she']
 b = ['scan','then','morn','horn']
 c = ['1011','2345','5678','9876']
 d=[]
-concodinate=[]
-for i in range(len(a)):
-    e=a[0][i],a[1][i],a[2][i]
-    d.append(e)
-##print(d)
-
-for i in d:
-    con=i
-    print(con)
+##concodinate=[]
+##for i in range(len(a)):
+##    e=a[0][i],a[1][i],a[2][i]
+##    d.append(e)
+####print(d)
+##
+##for i in d:
+##    con=i
+##    print(con)
 
 
 
@@ -30,3 +30,4 @@ for tup in tuples_list:
 
 # Print the final result
 print(result)
+

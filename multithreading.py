@@ -3,19 +3,19 @@
 #multitasking is called multiple process in simontariously - like a OS -(operating system is simontariously process the) is open the python,chrome,youtupe,notepad,and watch movie etc...    
 
 #normal function:
-def a():
-    count=0
-    while count<5:
-        print("function A")
-        count+=1
-
-def b():
-    count=0
-    while count<5:
-        print("function B")
-        count+=1
-a()
-b()
+##def a():
+##    count=0
+##    while count<5:
+##        print("function A")
+##        count+=1
+##
+##def b():
+##    count=0
+##    while count<5:
+##        print("function B")
+##        count+=1
+##a()
+##b()
 
 #thread program:
 # two types of thread are there available:
