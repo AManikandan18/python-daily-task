@@ -1,4 +1,4 @@
-##break and continue:
+##break and continue both using in single program:
 i=1
 while i<10:
     i+=1
@@ -6,8 +6,9 @@ while i<10:
         continue
     if i==9:
         break
-    
     print(i)
+
+
     
     
     
