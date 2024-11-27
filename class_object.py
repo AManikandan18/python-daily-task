@@ -45,11 +45,10 @@ person1.year=2006
 
 person1.biodata()
 
-##constructor with pass parameter:
+##constructor with pass argument to parameter:
 class fruit:
     def __init__(self,color,name,price):
         self.color=color
         self.name=name
         self.price=price
-f1=fruit("orange","orange",350)      
-        
+f1=fruit("orange","orange",350)   
