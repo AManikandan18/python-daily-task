@@ -16,13 +16,8 @@ a="compuuter"
 b=["uuUU"]
 c=" "
 for i in a:
-    if i not in vowels and i not in b:
+    if i not in vowels and not in b:
         c=c+i
     else:
         pass
-print(c)    
- 
-
-
-
-
+print(c)
