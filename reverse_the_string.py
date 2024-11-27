@@ -9,4 +9,3 @@ print(a[::-1])
 print(''.join(reversed(a)))
 
 
-
