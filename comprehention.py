@@ -22,3 +22,8 @@ print("even number is :",list2)
 ##set
 set2=[x for x in range(1,10) if(x%2==0)]
 print("even number is: ",set2)
+
+##tuple
+tuple2=tuple([x for x in range(1,10) if(x%2==0)])
+print("even number is: ",tuple2)
+
