@@ -30,3 +30,4 @@ print("even number is: ",tuple2)
 ##dictionary
 dict2={i:i**2 for i in range(1,10) if(i%2==0)}
 print("even number: ",dict2)
+
