@@ -27,3 +27,6 @@ print("even number is: ",set2)
 tuple2=tuple([x for x in range(1,10) if(x%2==0)])
 print("even number is: ",tuple2)
 
+##dictionary
+dict2={i:i**2 for i in range(1,10) if(i%2==0)}
+print("even number: ",dict2)
