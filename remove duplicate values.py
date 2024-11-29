@@ -17,10 +17,6 @@ for val in a:
 print(real_val)
 
 
-
-r=[]
-[r.append(val) for val in a if val not in r else print(val,"this is black goat in comprehension") for val in a]
-
 ##in comprehension:
 r_v=[]
 [r_v.append(val) for val in a if val not in r_v]
