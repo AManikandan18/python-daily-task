@@ -1,3 +1,4 @@
+##split
 a="hi i am good boy"
 b=a.split(" ")
 print(b)
