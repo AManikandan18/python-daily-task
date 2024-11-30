@@ -10,7 +10,7 @@ else:
     print("The value C",c,"is greater than a and b")
 
 
-##another way:
+##another way to achive the output:
 
 if a>b and a>c:
     print("The value A",a,"is greater than b and c")
