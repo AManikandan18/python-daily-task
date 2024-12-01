@@ -1,3 +1,4 @@
+##enumerate function
 a=["mani","asfaak","psh"]
 for i in enumerate(a):
     print(i)
