@@ -1,0 +1,10 @@
+pcking and unpacking
+GIT(global interpretor lock)
+
+mro mehods is have in super_keyword.py in python_for_git file location. 
+
+
+comprehension
+string format
+
+exception handling
