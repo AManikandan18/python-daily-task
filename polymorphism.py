@@ -21,6 +21,12 @@ display(10,10,10) #moonu argument ha pass pannum pothum enakku three values hum
 
 ## Second Way:
 
+## second way la na enna pandrana three class open pandra but ulla irukka ella
+## function kkum na name sound nu vaikkiren so python interpretor first sound
+## function ha pakkuthu then second sound function ha pakkuthu so adha override
+## pannuthu then third sound function ha pakkthu aprom adha override panni adha
+## print pannuthu...
+
 class animal():
     def sound(self):
         print("animal make sound")
@@ -28,12 +34,31 @@ class animal():
 class pets():
     def sound(self):
         print("dog make noice")
-    def satham(self):
-        print("ore satham")
 
 class bird(pets,animal):
     def sound(self):
         print("bird sing")  
 
 b1=bird()
-b1.satham()
+b1.sound()
+
+
+##polymorphism task by EMC academy:
+print("polymorphism tasks")
+class employee():
+    def __init__(self,name,salary):
+        print("hello")
+        self.name=name
+        self.salary=salary
+
+class manager(employee):
+    def __init__(self,name,salary,department="it"):
+        super().__init__()
+        self.department=department
+        
+    def display(self):
+        print(self.name,self.salary,self.department)
+        
+m1=manager(name="mani",salary=100000)
+m1.display()
+
