@@ -43,7 +43,9 @@ class e(a,b,c,d):
 
 
 obj2=e()
-## mro used to see the (orderwise) or see chaining class:  
+## mro used to see the (orderwise) or see chaining class if you create a all function in same name:  
 print(e.__mro__)
+## another way to call mro:
+print(e.mro())
 
 
