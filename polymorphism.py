@@ -53,12 +53,12 @@ class employee():
 
 class manager(employee):
     def __init__(self,name,salary,department="it"):
-        super().__init__()
+        super().__init__(name,salary)
         self.department=department
         
     def display(self):
-        print(self.name,self.salary,self.department)
+        print("Hi my name is :",self.name,"salary is",self.salary,"my department is",self.department)
         
-m1=manager(name="mani",salary=100000)
+m1=manager("mani",100000,"technology")
 m1.display()
 
