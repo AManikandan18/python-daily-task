@@ -1,9 +1,15 @@
-## Encapsulation:
+#### Encapsulation:
 
-## Content:
+#### Content:
 
+## *Encapsulation is like a capsule that is used to binding data and methods
+## within in a single unit.
 
-## Access Modifier:
+## *encapsulation restrict to access the variables and methods.
+
+#### Access Modifier:
+
+## the public modifier accessable from inside and outside the class.
 
 ## 1.Public coding:
 class manager():
@@ -18,7 +24,7 @@ m1.show()
 m1.name="mass"
 print("Ennala value ha outside irundhu cange panna mudiyuth so this is disadvandage",m1.name)
 
-## 2.Private Coding:
+#### 2.Private Coding:
 
 ## Private is only use within the same class functions:
 
@@ -31,9 +37,10 @@ class manager1():
 m1=manager1()
 m1.show()
 
+#### 3.Protect Coding:
+
 ## Protect is can i use the variable value in the subclass(Inheritance):
 
-## 3.Protect Coding:
 class manager():
     def __init__(self):
         self._name="mani"
