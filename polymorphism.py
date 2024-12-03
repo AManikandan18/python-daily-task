@@ -62,3 +62,24 @@ class manager(employee):
 m1=manager("mani",100000,"technology")
 m1.display()
 
+
+# Getter & Setter:
+
+class manager():
+    def __init__(self,name):
+        self.__name=name
+    def display(self):
+        print("I get the setter value thst is : ",self.__name)
+    def set_val(self,name):
+        self.__name=name
+    def get_val(self):
+        print("I get the setter value thst is : ",self.__name)
+obj=manager("mani")
+obj.display()
+
+print("this is printing and call the function by using \"print\" function",
+      obj.display())
+
+obj.set_val("mass")
+obj.get_val()
+
