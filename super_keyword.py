@@ -34,7 +34,7 @@ class d():
     def display(self):
         print("calss d is display")
 
-class e(a,b,c,d):
+class e(c,b,a,d):
     def __init__(self):
         super().__init__()
         print("class e")
@@ -47,5 +47,26 @@ obj2=e()
 print(e.__mro__)
 ## another way to call mro:
 print(e.mro())
+
+
+class mani():
+    def __init__(slef):
+        print("class mani")
+    def inits(self):
+        print("inits methods")
+
+class nandhu(mani):
+    def __init__(self):
+        super().__init__()
+        print("class nandhu is print")
+    def inits2(self):
+        print("inits2 methods")
+obj=nandhu()
+
+
+
+
+
+
 
 
