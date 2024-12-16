@@ -1,6 +1,7 @@
 #mulitasking : 
 #multithreading : multithreading is subset of multitasking
-#multitasking is called multiple process in simontariously - like a OS -(operating system is simontariously process the) is open the python,chrome,youtupe,notepad,and watch movie etc...    
+#multitasking is called multiple process in simontariously - like a OS -(operating system is simontariously process the) is open the python,chrome,youtupe,notepad,and
+##watch movie etc...    
 
 #normal function:
 ##def a():
