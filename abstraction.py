@@ -20,3 +20,5 @@ obj2=Shap()
 obj2.pent()
 #abstract method ha object creat panni call panna mudiyathu: 
 obj2.hex()
+
+
