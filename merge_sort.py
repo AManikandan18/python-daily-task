@@ -1,4 +1,4 @@
-a="mani"
+##a="mani"
 # for i in range(len(a)):
 #     if ord(a[i])>=97 or ord(a[i])<=122:
 #         b=chr(ord(a[i])-32)
@@ -46,7 +46,7 @@ def mergesort(a):
         for i in L:
             a.append(i)
         for i in R:
-            a.append(i)    
+            a.append(i)
 
 a = [1,2,6,4,0]
 mergesort(a)
@@ -54,8 +54,6 @@ print(a)
 
 
 
-
-#        
 # bobble sort:
 
 # a=[5,4,3,2,78,3,10,1]
