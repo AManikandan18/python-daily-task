@@ -26,12 +26,14 @@ node2=Node(3)
 node3=Node(4)
 node4=Node(5)
 node5=Node(6)
+node6=Node(7)
 
 
 head.pointer=node2
 node2.pointer=node3
 node3.pointer=node4
 node4.pointer=node5
+node5.pointer=node6
 
 print(head.data)
 # print(head.pointer)
