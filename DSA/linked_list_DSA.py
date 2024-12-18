@@ -31,7 +31,7 @@ head.pointer=node2
 node2.pointer=node3
 node3.pointer=node4
 
-# print(head.data)
+ print(head.data)
 # print(head.pointer)
 
 cur=head
