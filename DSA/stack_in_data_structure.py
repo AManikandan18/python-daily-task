@@ -9,22 +9,22 @@
 ##5.isempty(items==[])
 
 ## stack data structure:
-class stack():
+class Stack():
     def __init__(self):
         self.__item=[1,2,3]
         
     def push(self,value):
-        self.item.append(value)
+        self.__item.append(value)
         print(self.__item)
         
     def pop_value(self):
         if self.__item:
             self.__item.pop()
-            return self.item
+            return self.__item
         
     def peek_value(self):
-        if self.item:
-            return self.__item[-1]
+        if self.__item:
+            print(self.__item[-1])
         
     def sizes(self):
         if self.__item:
@@ -36,10 +36,16 @@ class stack():
         else:
             print(False)
 
-obj=stack()
+obj=Stack()
 ##obj._stack__item.clear() #ippadi potta enakku print aguthu but i use the private modifier
-
-obj.__item.clear() # ithula enakku error varuthu.
+obj.push(5)
+obj.push(6)
+obj.push(7)
+obj.push(8)
+obj.peek_value()
+obj.pop_value()
+obj.pop_value()
+obj._Stack__item.clear() # name mangling
 obj.isempty()
 
 ##Why the Error Occurs:
