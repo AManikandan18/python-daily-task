@@ -1,5 +1,7 @@
 ## stack is like 3 floor cake if you want to take first floor cake you cut the
-## top two floor cake first then you take the first floor.
+## top two floor cake first then you take the first floor. this LIFO-(Last In Last Out).
+
+#  Queue is like rahtion kadai:so this is FIFO First In First Out 
 
 ## stack is have a 5 types it is:
 ##1.push(append)

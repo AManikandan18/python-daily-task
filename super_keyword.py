@@ -6,44 +6,74 @@
 ##irundha adhayum sethu print pannum that is reason to we use the super().__init__()
 ##function"""
 ##
-##
-##class a():
-##    def __init__(self):
-##        print("class A")
-####        super().__init__()
-##    def display(self):
-##        print("calss a is display")
-##
-##class b():
-##    def __init__(self):
-##        super().__init__()
-##        print("class b")
-##    def display(self):
-##        print("calss b is display")
-##
-##class c():
-##    def __init__(self):
-##        print("class c")
-##        super().__init__()
-##    def display(self):
-##        print("class c is display")
-##
-##class d():
-##    def __init__(self):
-##        super().__init__()
-##        print("class d")
-##    def display(self):
-##        print("calss d is display")
-##
-##class e(d,c,b,a):
-##    def __init__(self):
-##        super().__init__()
-##        print("class e")
-##    def display():
-##        print("calss e is display")
-##
-##
-##obj2=e()
+
+class a():
+   def __init__(self):
+       print("class A")
+       super().__init__()
+   def display(self):
+       print("calss a is display")
+
+class b():
+   def __init__(self):
+       super().__init__()
+       print("class b")
+   def display(self):
+       print("calss b is display")
+
+class c():
+   def __init__(self):
+       print("class c")
+       super().__init__()
+   def display(self):
+       print("class c is display")
+
+class d():
+   def __init__(self):
+       super().__init__()
+       print("class d")
+   def display(self):
+       print("calss d is display")
+
+class e(d,c,b,a):
+   def __init__(self):
+       super().__init__()
+       print("class e")
+   def display():
+       print("calss e is display")
+
+
+obj2=e()
+
+# class a():
+#    def __init__(self):
+#        print("class A")
+#        super().__init__()
+#    def display(self):
+#        print("calss a is display")
+
+# class b():
+#    def __init__(self):
+#        super().__init__()
+#        print("class b")
+#    def display(self):
+#        print("calss b is display")
+# class f:
+#     def __init__(self):
+#         print("class f")
+# class e(b,f,a):
+#    def __init__(self):
+#        super().__init__()
+#        print("class e")
+#    def display():
+#        print("calss e is display")
+
+
+# obj2=e()
+
+
+
+
 #### mro used to see the (orderwise) or see chaining class if you create a all function in same name:  
 ##print(e.__mro__)
 #### another way to call mro:
@@ -88,17 +118,17 @@
 ##        print(a)
 ##obj=D()
 
-class A:
-    pass
-class B(A):
-    pass
-class D(B):
-    pass
-class C(A,D,B):
-    def name(self):
-        print("mani")
-##class D(C,B,A):
-##    pass
+# class A:
+#     pass
+# class B(A):
+#     pass
+# class D(B):
+#     pass
+# class C(A,D,B):
+#     def name(self):
+#         print("mani")
+# ##class D(C,B,A):
+# ##    pass
     
-obj=C()
-obj.name()
+# obj=C()
+# obj.name()
