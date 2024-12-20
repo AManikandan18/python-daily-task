@@ -113,5 +113,6 @@ linked.add(5)
 linked.add(6)                
 linked.add(7) 
 linked.add(8)
+linked.add(9)
 
 linked.display()
