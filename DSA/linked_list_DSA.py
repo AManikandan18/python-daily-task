@@ -112,5 +112,6 @@ linked=LinkedList()
 linked.add(5)                
 linked.add(6)                
 linked.add(7) 
+linked.add(8)
 
 linked.display()
