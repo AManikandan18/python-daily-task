@@ -1,3 +1,4 @@
+
 # Single Linked List:
 
 # class Node:
@@ -32,25 +33,25 @@
 
 
 
-class Node:
-    def __init__(self,data):
-        self.data=data
-        self.pointer=None
+# class Node:
+#     def __init__(self,data):
+        # self.data=data
+#         self.pointer=None
     
 
-    def add(self,value):
-        self.pointer=value
-        print(self.pointer)
-        # print(self.pointer)
-        # return self.pointer
+#     def add(self,value):
+#         self.pointer=value
+#         print(self.pointer)
+#         # print(self.pointer)
+#         # return self.pointer
     
-    def display(self):
-        # if self.pointer is not None:
-        # if self.pointer:
-        while(self.pointer is not None):
-            print(self.data)
-            self.data=self.pointer  
-            break
+#     def display(self):
+#         # if self.pointer is not None:
+#         # if self.pointer:
+#         while(self.pointer is not None):
+#             print(self.data)
+#             self.data=self.pointer  
+#             break
     # def display(self):
     #     # if self.pointer is not None:
     #     if self.pointer:
@@ -72,28 +73,44 @@ class Node:
     #     else:
     #         return True    
 
-head=Node(5)
-head2=Node(6)
-head3=Node(7)
-# head.add(7)
-# head.add(8)
-print("the ",head2)
-head.add(head2)
-head.add(head3)
-# print(head3)
-head.display()
+# head=Node(5)
+# head2=Node(6)
+# head3=Node(7)
+# # head.add(7)
+# # head.add(8)
+# print("the ",head2)
+# head.add(head2)
+# head.add(head3)
+# # print(head3)
+# head.display()
 
-# head.pointer=node2
-# node2.pointer=node3
-# node3.pointer=node4
-# node4.pointer=node5
-# node5.pointer=node6
 
-# print(head.data)
-# print(head.pointer)
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.pointer=None
 
-# cur=head
+class LinkedList:
+    def __init__(self):
+        self.head=None        
+    def add(self,data):
+        NewNode=Node(data)
+        if self.head is None:
+            self.head=NewNode
+        else:
+            cur=self.head
+            while(cur.pointer is not None):
+                cur = cur.pointer
+            cur.pointer=NewNode  
+    def display(self):
+        cur = self.head 
+        while(cur is not None):
+            print(cur.data,end=" ")                                     
+            cur=cur.pointer       
 
-# while(cur is not None):
-#     print(cur.data)
-#     cur=cur.pointer
+linked=LinkedList()
+linked.add(5)                
+linked.add(6)                
+linked.add(7) 
+
+linked.display()
