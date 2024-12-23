@@ -63,9 +63,7 @@ class LinkedList:
                 cur=self.head
                 while(cur.pointer is not None):
 
-
-
-linked=LinkedList()
+linked = LinkedList()
 linked.add(5)                
 linked.add(6)                
 linked.add(7) 

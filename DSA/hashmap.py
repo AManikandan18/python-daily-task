@@ -15,40 +15,65 @@
 
 # HaspMap implementation
 
-class HashMap:
+# class HashMap:
     
-    def __init__(self,size):
-        self.size=size
-        self.hashIndex=[None]*self.size
+#     def __init__(self,size):
+#         self.size=size
+#         self.hashIndex=[None]*self.size
 
-    def get_index(self,key):
-        return hash(key)%self.size
+#     def get_index(self,key):
+#         return hash(key)%self.size
     
-    def __setitem__(self,key,value):
-        index=self.get_index(key)
-        print(index)
-        if self.hashIndex[index] is None:
-            self.hashIndex[index]=[[key,value]]
-            print(self.hashIndex)
-        else:
-            self.hashIndex[index].append([key,value])
-            print(self.hashIndex)
+#     def __setitem__(self,key,value):
+#         index=self.get_index(key)
+#         print(index)
+#         if self.hashIndex[index] is None:
+#             self.hashIndex[index]=[[key,value]]
+#             print(self.hashIndex)
+#         else:
+#             self.hashIndex[index].append([key,value])
+#             print(self.hashIndex)
 
-    def Get(self,key):
-        index=self.get_index(key)
-        if self.hashIndex[index]:
-            for val in self.hashIndex[index]:
-                if val[0]==key:
-                    print(val[1])
-        else:
-            print("your value" ,key,"is not here")
+#     def Get(self,key):
+#         index=self.get_index(key)
+#         if self.hashIndex[index]:
+#             for val in self.hashIndex[index]:
+#                 if val[0]==key:
+#                     print(val[1])
+#         else:
+#             print("your value" ,key,"is not here")
         
     
-obj=HashMap(10)
-# obj.hashIndex
-# obj.add("name","mani")
-# obj.add("age",18)
-obj["roll"]="2026J09" #this code for when you using the bild-in-function def __setitem__():
-obj.Get("roll")
-# obj["roll"]="2026J09"
+# obj=HashMap(10)
+# # obj.hashIndex
+# # obj.add("name","mani")
+# # obj.add("age",18)
+# obj["roll"]="2026J09" #this code for when you using the bild-in-function def __setitem__():
 # obj.Get("roll")
+# # obj["roll"]="2026J09"
+# # obj.Get("roll")
+
+
+
+
+
+
+
+
+class HashMap:
+    def __init__(self):
+        self.size=10
+        self.HashList=[None]*self.size
+    def Get_Index(self,key):
+        Index=hash(key)%self.size
+        return Index
+    def set(self,key,value):
+        Index=self.Get_Index
+        if self.HashList is None:
+            self.HashList[Index]=[[key,value]]
+            print(self.HashList)
+        else:
+            self.HashList.append([key,value])
+            print(self.HashList)
+hm=HashMap()
+hm.set("name","mani")
