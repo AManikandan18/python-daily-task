@@ -68,12 +68,37 @@ class HashMap:
         Index=hash(key)%self.size
         return Index
     def set(self,key,value):
-        Index=self.Get_Index
-        if self.HashList is None:
+        Index=self.Get_Index(key)
+        if self.HashList[Index] is None:
             self.HashList[Index]=[[key,value]]
             print(self.HashList)
         else:
             self.HashList.append([key,value])
             print(self.HashList)
+
+    def __getitem__(self,key):
+        Index=self.Get_Index(key)
+        if self.HashList[Index] is not None:
+            sublist=self.HashList[Index]
+            for pair in sublist:
+                if pair[0]==key:
+                   return pair[1]
+
+    def __delitem__(self,key):
+        Index=self.Get_Index(key)
+        if self.HashList[Index] is not None:
+            sublist = self.HashList[Index]
+            for i,val in enumerate(sublist):
+                if val[i]==key:
+                    del sublist[i]
+                print("after deleting value",self.HashList)
+
+
+
 hm=HashMap()
 hm.set("name","mani")
+hm.set("roll",12345)
+# print(hm.Get("name"))
+print(hm["name"])
+del hm["name"]
+print("after deleting value",hm.HashList)
