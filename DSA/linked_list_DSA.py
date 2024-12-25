@@ -40,7 +40,7 @@
 #     def __init__(self):
 #         self.head=None        
 #     def add(self,data):
-#         NewNode=Node(data)
+#         NewNode=Node(data)           
 #         if self.head is None:
 #             self.head=NewNode
 #         else:
@@ -80,25 +80,28 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head=None
-    def add(self,data):
+    
+    def Add(self,data):
         NewNode=Node(data)
         if self.head is None:
             self.head=NewNode
         else:
-            cur = self.head
+            cur=self.head
             while(cur.pointer is not None):
-                cur = cur.pointer
-            self.head=NewNode
+                cur=cur.pointer
+            cur.pointer=NewNode
     
-    def display(self):
-        cur=self.head
-        while(cur is not None):
-            print(cur.data)
-            cur.data=cur.pointer
+    def Display(self):
+        cur =self.head
+        while(cur.pointer is not None):
+            print(cur.data,end=" ")
+            cur=cur.pointer
+        print(cur.data)    
+
 
 LL=LinkedList()
-LL.add(5)
-LL.add(6)
-LL.add(7)
-LL.display()            
-            
+LL.Add(5)       
+LL.Add(6)       
+LL.Add(7)
+
+LL.Display()
