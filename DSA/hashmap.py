@@ -1,3 +1,4 @@
+## hash
 # ------ hash method ----- how its runn....
 
 # print(hash("mani"))
