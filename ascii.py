@@ -1,4 +1,4 @@
-##example of 
+##example of ascii program
 print(ord("A"),ord("Z"))
 print(ord("a"),ord("z"))
 
