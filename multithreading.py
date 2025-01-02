@@ -28,26 +28,37 @@
   # 2.Time is saving
 
 # multithreading program:
-import _thread
-#import time
-def a(msg):
-    count=0
-    while count<5:
-        count+=1
-        #time.sleep(3)
-        print(msg)
+# import _thread
+# #import time
+# def a(msg):
+#     count=0
+#     while count<5:
+#         count+=1
+#         #time.sleep(3)
+#         print(msg)
 
-def b(msg):
-    count=0
-    while count<5:
-        count+=1
-        #time.sleep(5)
-        print(msg)
-try:
-    _thread_start_new_thread(a,("thread 1"))
-    _thread_start_new_thread(b,("thread 2"))
-except:
-    pass
-   # print("first thread is error")
-while 1:
-    pass
+# def b(msg):
+#     count=0
+#     while count<5:
+#         count+=1
+#         #time.sleep(5)
+#         print(msg)
+# try:
+#     _thread_start_new_thread(a,("thread 1"))
+#     _thread_start_new_thread(b,("thread 2"))
+# except:
+#     pass
+#    # print("first thread is error")
+# while 1:
+#     pass
+
+import threading
+import time
+def threads():
+    while True:
+        print("First Thread is running")
+        time.sleep(5)
+thr=threading.Thread(target=threads(),daemon=True)
+thr.start()
+time.sleep(5)
+print("Out of thread....")
