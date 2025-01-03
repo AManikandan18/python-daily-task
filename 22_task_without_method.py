@@ -141,7 +141,7 @@
 ##else:
 ##    print("not a leap year")
 
-##22    
+##22 tables    
 a=int(input("enter number of table: "))
 b=int(input("how many time you run table: "))
 for i in range(1,b+1):
