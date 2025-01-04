@@ -56,15 +56,23 @@ import threading
 import time
 def threads():
     n=0
-    while n<5:
+    while True:
         print("First Thread is running")
-        time.sleep(2)
-        n+=1
-thr=threading.Thread(target=threads(),daemon=True)
-thr.start()
-time.sleep(5)
-thr.join()
+        time.sleep(4)
+
 def threds1():
-  print("this is for join purpose because, join() is one function execute until not exit this function before complete that function.")
-threds1()
+  # print("The join() purpose because, join() is one function execute until not exit this function before complete that function.")
+  for i in range(5):
+    print(i)
+    time.sleep(2)        
+thr=threading.Thread(target=threads,daemon=True)
+
+thr2=threading.Thread(target=threds1,daemon=True)
+thr.start()
+
+
+time.sleep(5)
+
+
+
 print("Out of thread.....")
