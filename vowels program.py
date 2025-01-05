@@ -1,7 +1,7 @@
 ##count vowels in string:
 a=input("enter your string")
 count=0
-for  i in a:
+for i in a:
     if i  in "aeiouAEIOU":
        count+=1
 print(count)
