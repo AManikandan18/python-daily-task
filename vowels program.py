@@ -1,13 +1,13 @@
-####count vowels in string:
-##a=input("enter your string")
-##count=0
-##for i in a:
-##    if i  in "aeiouAEIOU":
-##       count+=1
-##print(count)
-##
+##count vowels in string:
+a=input("enter your string")
+count=0
+for i in a:
+    if i  in "aeiouAEIOU":
+       count+=1
+print(count)
 
-## print vowels in list program:
+
+## print vowels in list correct program:
 a=int(input("enter the count for how many time do you want enter the string: "))
 values=[]
 vowels_value=[]
