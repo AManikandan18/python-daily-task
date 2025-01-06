@@ -5,7 +5,7 @@ rev_value=""
 for i in a:
     rev_value=i+rev_value
 if a==rev_value:
-    print("This is Palindrome")
+    print("YES,your word",a,"is palindrome.")
 else:
     print("Not a Palindrome")
 
