@@ -1,3 +1,5 @@
+class and object explain:
+
 class na oru appa oda money,assets,home,laptop,mobile,car.
 object na enna na( oru 2 son irukkanga avanga appavoda money,assets,car,laptop adhula use pandranga )
 and why object is must use(because appa oda money,assets,car,laptop la avangalakku son irundha use pannuvanga illa na andha 
