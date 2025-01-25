@@ -1,4 +1,4 @@
-#Zip 
+#Zip Build in 
 name=["mani","paramesh","asfaak"]
 age=[21,23,22]
 b=zip(name,age)
