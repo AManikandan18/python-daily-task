@@ -1,4 +1,4 @@
-#armas
+#armastrong 
 
 ##num=int(input("enter the number: "))
 ##n=len(str(num))
