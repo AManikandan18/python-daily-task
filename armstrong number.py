@@ -1,3 +1,5 @@
+#armas
+
 ##num=int(input("enter the number: "))
 ##n=len(str(num))
 ##sum=0
